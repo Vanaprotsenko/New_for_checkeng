@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "firmware_tools"
+version = "0.1.0"
+description = ""
+authors = ["Silence <davydenko.a@ajax.systems>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.9"
+intelhex = "^2.3.0"
+pyserial = "^3.5"
+
+[tool.poetry.group.dev.dependencies]
+pyinstaller = { version = ">=5.1", python = ">=3.8,<3.11" }
+pre-commit = ">=2.19.0"
+pytest = ">=7.2.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
